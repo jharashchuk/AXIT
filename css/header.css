@@ -1,0 +1,97 @@
+
+.header {   
+    padding: 20px 0 19px 0;
+    background: #000000;
+}
+
+
+.header_label {
+    font-family: Raleway, sans-serif;    
+    font-weight: normal;
+    font-size: 30px;    
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.header_label::after {
+    content: "it";
+    text-transform: uppercase;
+    color: #EC7979;
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.header_nav {
+    flex: 0 1 42%;
+}
+
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header_list {
+        justify-content: space-around;
+    }
+}
+
+.header_item {
+    margin: 0 5px 0 0;
+}
+
+.header_item:last-of-type {
+    margin-right: 0;
+}
+
+.header_nav a {
+    color:#ffffff;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: .5s all ease;
+    line-height: 1;
+    position: relative;
+    padding-left: 4px;
+    font-family: Open Sans, sans-serif;   
+    font-weight: 600;
+    font-size: 15px;        
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header_nav a::before {
+    background-color: currentColor;
+    display: block;
+    content: "";
+    height: 0%;
+    width: 2px;
+    bottom: 0;
+    left: 0;
+    position:absolute;
+    transition: .5s all ease;     
+}
+
+.header_nav a:hover {       
+    background-size: 100% 2px;    
+}
+
+.header_nav li:hover a:before {
+    height: 100%;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    

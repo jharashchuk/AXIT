@@ -1,0 +1,140 @@
+.pricing {
+    /* min-height: 822px; */
+    padding: 80px 0;
+    background: #F5F5F5;
+}
+
+@media (max-width: 992px) {
+    .pricing {
+        padding: 70px 0;
+    }
+}
+
+
+.pricing__header {
+    font-family: Raleway, sans-serif;    
+    font-weight: normal;
+    font-size: 36px;
+    color: #212121;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing__header::after {
+    content: "";
+    display: block;
+    margin: 34px auto 0;
+    width: 64px;
+    height: 2px;
+    background-color:#E72424;
+}
+
+.pricing__subheader {
+    font-family: Open Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;  
+    color: #86878B;
+    text-align: center;
+    margin-top: 34px;
+}  
+
+.pricing_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 62px -15px 0;  
+}   
+
+.pricing_item {
+    flex: 0 1 33.333%;
+    margin: 0 15px;
+    transition: .5s all ease;
+}
+
+.pricing_item:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2); */
+}
+
+@media (max-width: 768px) {
+    .pricing_wrapper {
+        flex-direction: column;             
+    }
+    .pricing_item {
+        flex: 1 1 auto;
+        margin-top: 50px;
+        padding: 0 13%;         
+    }
+    .pricing_item:hover {
+        transform: scale(1);
+    }
+}
+
+.pricing__list {
+    list-style-type: none;
+}
+
+.pricing__option {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #333333;
+    padding: 15px 0 8px 0;
+    transition: .5s all ease;
+}
+
+.pricing__cost {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;  
+    text-align: center;
+    color: #FFFFFF;
+    background: #333333;
+    padding: 26px 0 33px 0;
+    margin-top: 1px;
+    transition: .5s all ease;
+}
+
+.pricing__descr,
+.pricing__descr-optima {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;  
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 17px 0 14px 0;
+    background: #333333;
+    margin-top: 2px;
+    transition: .5s all ease;
+}
+
+.pricing__descr-optima {
+    background: #D98943;
+}
+
+.pricing__feature {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;  
+    text-align: center;
+    color: #86878B;
+    background: #FFFFFF;
+    padding: 10px 0 11px 0;
+    margin-top: 4px;
+    transition: .5s all ease;
+}
+
+.pricing__feature:hover {
+    background: #D98943;
+    color: #FFFFFF;
+}

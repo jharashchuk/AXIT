@@ -1,0 +1,135 @@
+.customers {   
+    padding: 80px 0 120px 0;
+}
+
+@media (max-width: 992px) {
+    .customers {
+        padding: 70px 0 100px 0;
+    }
+}
+ 
+
+.customers__header {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;    
+    text-align: center;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.customers__header::after {
+    content: "";
+    display: block;
+    margin: 34px auto 0;
+    width: 64px;
+    height: 2px;
+    background-color:#E72424;
+}
+
+.customers__subheader {
+    font-family: Open Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;  
+    color: #86878B;
+    text-align: center;
+    margin-top: 34px;
+}  
+
+.customers_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 67px -15px 0;  
+}   
+
+.customers_item {
+    margin: 0 15px;
+    flex: 0 1 25%;
+}
+@media (max-width: 620px) {
+    /* .customers_wrapper {
+        flex-direction: column;
+    } */
+    /* .customers_item {
+        flex: 0 1 40%;
+    } */
+    .costomers {
+        display: none;
+    }
+}
+
+.customers__descr {
+    background: #E2E2E2;
+    border-radius: 7px;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;   
+    text-align: center;
+    color: #86878B;
+    padding: 9px 22px 6px 23px;
+    position: relative;
+}
+
+.customers__descr:after {
+    content: ''; 
+    position: absolute;
+    left: 45px;
+    bottom: -34px; 
+    border: 17px solid transparent; 
+    border-top: 17px solid #E2E2E2;; 
+}
+
+.customers__avatar {
+    display: flex;
+   justify-content: space-around;
+   margin-top: 22px;
+   align-items: center;
+}    
+
+.customers__round {
+    width: 70px;
+    height: 70px;    
+    overflow: hidden;
+    border-radius: 50%;    
+    flex: 0 0 70px;
+    margin: 0 5px;     
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.customers__photo {
+   max-width: 100%;
+   object-fit: cover;
+}
+
+
+.customers__name {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;    
+    color: #333333;
+}   
+
+.customers__post {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;     
+    color: #86878B;
+    text-align: right;
+}
+
+
+
+
+
+

@@ -1,0 +1,217 @@
+.template {
+    background: url("../img/background_template.jpg");   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    width: 100%;
+    padding: 108px 0 101px;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .template {
+        padding: 54px 0 50px;
+    }
+}
+
+.template::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);    
+    position: absolute;
+    left: 0;
+    top: 0;   
+}
+
+.template_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.template_descr {   
+    flex: 0 0 46%;
+}
+
+@media (max-width: 992px) {
+    .template_descr {
+        flex: 0 0 40%;
+    }
+}
+
+.template_form {    
+    flex: 0 0 34%;
+}
+
+@media (max-width: 992px) {
+    .template_form {
+        flex: 0 0 45%;
+    }
+}
+@media (max-width: 768px) {
+    .template_form {
+        display: none;
+    }
+    .template_descr {
+        flex: 0 0 80%;
+    }
+}
+
+.template_label {
+    font-family: Raleway, sans-serif;    
+    font-weight: normal;
+    font-size: 60px;    
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.template_label::after {
+    content: "it";
+    text-transform: uppercase;
+    color: #EC7979;
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+}
+
+.template_header {
+    font-family: Raleway, sans-serif;    
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+@media (max-width: 992px) {
+    .template_header {
+        font-size: 30px;
+    }
+}
+
+.template_header::after {
+    content: "";
+    display: block;
+    margin-top:32px;
+    width: 64px;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+.template_subheader {
+    font-family: Raleway, sans-serif;   
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 39px;
+    width: 50%;
+}
+
+@media (max-width: 992px) {
+    .template_subheader {
+        width: 70%;
+    }
+}
+
+.template__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Open Sans, sans-serif;   
+    font-weight: 600;
+    font-size: 15px;    
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    width: 135px;
+    height: 42px;
+    border: 1px solid #FFFFFF;      
+    margin-top: 39px;
+    transition: .5s all ease;
+}
+
+.template__btn:hover {
+    transform: scale(1.2);
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    border-radius: 5px;
+}
+
+form[name="template"] {
+    /* max-width: 370px;     */
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+
+.template-form_content {
+    padding: 0 59px 60px;
+}
+
+@media (max-width: 992px) {
+    .template-form_content {
+        padding: 0 50px 50px;
+    }
+}
+
+.template_title {
+    font-family: Open Sans, sans-serif;   
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;    
+    text-align: center;    
+    color: #333333;
+    padding: 30px 5px;
+  }
+
+.template_title-pink {
+    color: #EC7979;
+  }
+
+label {
+    font-family: Open Sans, sans-serif;    
+    font-weight: normal;
+    font-size: 14px;        
+    color: #BDBDBD;
+   
+  }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #BDBDBD;
+    padding: 5px;
+}
+
+.template-form_item {
+    margin-top: 20px;
+}
+
+.template__btn-form {
+    font-family: Open Sans, sans-serif;   
+    font-weight: 600;
+    font-size: 15px;   
+    color: #FFFFFF;
+    width: 100%;
+    background: #EC7979;
+    display: block;
+    padding: 33px 0;   
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .template__btn-form {
+        padding: 28px 0;
+    }
+}

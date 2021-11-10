@@ -1,0 +1,124 @@
+.awesome {
+    /* min-height: 595px; */
+    padding: 100px 0 109px 0;
+}
+
+@media (max-width: 992px) {
+    .awesome {
+        padding: 70px 0;
+    }
+}
+.awesome_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 36px -15px 0;  
+}   
+
+.awesome_item {
+    /* width: 350px; */
+    flex: 0 1 33.333%;
+    padding: 0 15px;
+}
+@media (max-width: 768px) {
+    .awesome_wrapper {
+        flex-direction: column;
+        align-items: center;        
+    }
+    .awesome_item {
+        flex: 1 1 auto;
+        margin-top: 20px;
+    }
+}
+   
+.awesome_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;   
+    border: 1px solid #D98943;
+    border-radius: 100%;  
+    overflow: hidden; 
+    
+}
+
+.awesome_round i {
+    object-fit: cover;
+    object-position: center;
+    color: #eea462;
+    font-size: 35px;
+    transition: .5s all ease;
+}
+
+/* @keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40%, 80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	
+} */
+
+.awesome_round i:hover {
+    transform: scale(1.3) rotate(1turn);
+    color: #f37c14;
+    /* animation: bounce 1s;     */
+}
+
+
+.awesome__subheader {
+    font-family: Open Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;  
+    color: #86878B;
+    text-align: center;
+    margin-top: 30px;
+}   
+
+.awesome__subtitle {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.awesome__descr {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    margin-top: 16px;
+}  
+
+
+.awesome__header {
+    font-family: Raleway, sans-serif;    
+    font-weight: normal;
+    font-size: 36px;
+    color: #212121;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.awesome__header::after {
+    content: "";
+    display: block;
+    margin: 25px auto 0;
+    width: 64px;
+    height: 2px;
+    background-color:#E72424;
+}
+

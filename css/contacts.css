@@ -1,0 +1,106 @@
+.contacts {
+    padding: 88px 0 44px 0;
+}
+
+.contacts__header {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;    
+    text-align: center;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.contacts__header::after {
+    content: "";
+    display: block;
+    margin: 34px auto 0;
+    width: 64px;
+    height: 2px;
+    background-color:#E72424;
+}
+
+.contacts__subheader {
+    font-family: Open Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;  
+    color: #86878B;
+    text-align: center;
+    margin-top: 34px;
+} 
+
+form[name="contacts"] {
+    margin-top: 87px;
+}
+
+.contacts-form_item input,
+#message {
+    padding: 5px;
+}
+
+#message {
+    display: block;
+    width: 100%; 
+    height: 90%;  
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #BDBDBD;
+    resize: none;
+}
+
+.contacts-form_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contacts-form_column {
+    flex: 0 1 40%;
+}
+
+@media (max-width: 992px) {
+    .contacts {
+        padding: 70px 0 44px 0;
+    }
+    .contacts-form_content {
+        flex-direction: column;
+        padding: 0 50px;       
+    }
+    .contacts-form_column {
+        flex: 1 1 auto;
+    }
+    .contacts-form_column:last-of-type {
+        margin-top: 32px;
+    }
+    form[name="contacts"] {
+        margin-top: 77px;
+    }
+}
+
+.contacts__btn-form {
+    display: block;
+    background: #EC7979;
+    border: 1px solid #FFFFFF;
+    margin: 69px auto 0;
+    font-family: Open Sans, sans-serif;    
+    font-weight: 600;
+    font-size: 15px;   
+    text-align: center;
+    color: #FFFFFF;
+    padding: 11px 32px;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+.contacts__btn-form:hover {
+    transform: scale(1.2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.contacts-form_column .contacts-form_item:not(:first-child) {
+    margin-top: 32px;
+}
+
